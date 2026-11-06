@@ -1,0 +1,14 @@
+# Nunca subir el juego ni nada derivado de su contenido
+*.iso
+*.bin
+*.BIN
+*.img
+*.chd
+*.zip
+*.7z
+*.rar
+*.xdelta
+*.state
+traduccion/
+trabajo/
+build*/
