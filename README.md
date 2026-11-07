@@ -2,6 +2,8 @@
 
 [![Invítame a un café en Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/johanderohan)
 
+Ficha del proyecto, capturas y más traducciones al castellano en **[Parches en Castellano](https://parchesencastellano.com/traducciones/playstation-2/suikoden-iii)**.
+
 Traducción al **español de España** de *Suikoden III* (PlayStation 2, 2002), el RPG de Konami de las
 tres historias (Hugo, Chris y Geddoe) con el sistema Trinity Sight, que nunca salió en español.
 
