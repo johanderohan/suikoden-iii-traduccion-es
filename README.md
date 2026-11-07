@@ -15,11 +15,12 @@ versión USA para aplicarlo.
 
 ## Estado
 
-Última versión: **[v1.0.1 — Parche compatible con Windows](../../releases/tag/v1.0.1)**.
+Última versión: **[v1.0.2 — Parche pequeño y rápido](../../releases/tag/v1.0.2)**.
 
-v1.0.1 no cambia la traducción: el juego traducido es idéntico al de v1.0. Solo sustituye el parche, que
-en Delta Patcher y otros parcheadores de Windows fallaba con «decoder target window overflows a
-usize_t». Si ya tienes el ISO de v1.0 funcionando, no necesitas volver a parchear.
+v1.0.2 no cambia la traducción: los ficheros del juego son idénticos a los de v1.0 y v1.0.1. Cambia la
+disposición interna del ISO para que el parche ocupe 1,6 MB (antes 167 MB) y se aplique en segundos.
+Con v1.0.1, xPatcher y otros parcheadores de Windows se quedaban parados en los 32 MB. Si ya tienes
+un ISO traducido que funciona, no necesitas volver a parchear.
 
 | Parte | Estado |
 |---|---|
@@ -80,9 +81,9 @@ Si encuentras un texto cortado, en inglés o un error, abre una incidencia con u
    Si no coincide, el parche fallará o dará un resultado corrupto.
 4. Aplica el parche con una de estas herramientas:
    - **Windows**: [Delta Patcher](https://github.com/marco-calautti/DeltaPatcher/releases)
-   - **Linux / macOS**: `xdelta3 -d -s "Suikoden III (USA).iso" suikoden-iii-traduccion-es-v1.0.1.xdelta "Suikoden III (ES).iso"`
-5. Para **v1.0.1** (igual que v1.0), comprueba que el ISO resultante tiene MD5 **`8c025a0069cc627cfdd938eb24f35c36`**
-   (mismo tamaño que el original).
+   - **Linux / macOS**: `xdelta3 -d -s "Suikoden III (USA).iso" suikoden-iii-traduccion-es-v1.0.2.xdelta "Suikoden III (ES).iso"`
+5. Para **v1.0.2**, comprueba que el ISO resultante tiene MD5 **`ee0d007d48d9edb2550a511257f27d56`**
+   (mismo tamaño que el original). Con v1.0 y v1.0.1 era `8c025a0069cc627cfdd938eb24f35c36`.
 6. Carga el ISO resultante en tu emulador (PCSX2) o en tu método habitual para PS2.
 
 Aplica cada versión sobre el **ISO USA original**, no sobre uno ya traducido.
