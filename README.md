@@ -15,12 +15,18 @@ versión USA para aplicarlo.
 
 ## Estado
 
-Última versión: **[v1.0.2 — Parche pequeño y rápido](../../releases/tag/v1.0.2)**.
+Última versión: **[v1.0.3 — Correcciones de texto y de género](../../releases/tag/v1.0.3)**.
 
-v1.0.2 no cambia la traducción: los ficheros del juego son idénticos a los de v1.0 y v1.0.1. Cambia la
-disposición interna del ISO para que el parche ocupe 1,6 MB (antes 167 MB) y se aplique en segundos.
-Con v1.0.1, xPatcher y otros parcheadores de Windows se quedaban parados en los 32 MB. Si ya tienes
-un ISO traducido que funciona, no necesitas volver a parchear.
+v1.0.3 corrige tres errores avisados por un jugador y los parecidos que aparecieron al revisar:
+
+- opciones y avisos que salían pegados al nombre del objeto («AceptoGuion 2» → «Aceptar Guion 2»);
+- la condición de victoria «Sobrevivir \_x\_ turnos» de las guerras (el marcador también sale tal
+  cual en el original inglés) pasa a «Sobrevivir varios turnos»;
+- personajes que hablaban en el género equivocado (Salome, Cecile, Lilly, Sharon, Mua...) y
+  tratamientos mal dirigidos: 25 líneas corregidas tras extraer del juego quién dice cada frase de
+  8.300 diálogos de escena. No cubre las elecciones del jugador, los PNJ de pueblo ni los minijuegos.
+
+v1.0.2 no cambiaba la traducción respecto a v1.0: solo hizo el parche pequeño (1,6 MB) y rápido.
 
 | Parte | Estado |
 |---|---|
@@ -81,9 +87,9 @@ Si encuentras un texto cortado, en inglés o un error, abre una incidencia con u
    Si no coincide, el parche fallará o dará un resultado corrupto.
 4. Aplica el parche con una de estas herramientas:
    - **Windows**: [Delta Patcher](https://github.com/marco-calautti/DeltaPatcher/releases)
-   - **Linux / macOS**: `xdelta3 -d -s "Suikoden III (USA).iso" suikoden-iii-traduccion-es-v1.0.2.xdelta "Suikoden III (ES).iso"`
-5. Para **v1.0.2**, comprueba que el ISO resultante tiene MD5 **`ee0d007d48d9edb2550a511257f27d56`**
-   (mismo tamaño que el original). Con v1.0 y v1.0.1 era `8c025a0069cc627cfdd938eb24f35c36`.
+   - **Linux / macOS**: `xdelta3 -d -s "Suikoden III (USA).iso" suikoden-iii-traduccion-es-v1.0.3.xdelta "Suikoden III (ES).iso"`
+5. Para **v1.0.3**, comprueba que el ISO resultante tiene MD5 **`8b74ab3a16bbf54dd8da7db5cdcb5b2c`**
+   (mismo tamaño que el original). Con v1.0.2 era `ee0d007d48d9edb2550a511257f27d56`.
 6. Carga el ISO resultante en tu emulador (PCSX2) o en tu método habitual para PS2.
 
 Aplica cada versión sobre el **ISO USA original**, no sobre uno ya traducido.
